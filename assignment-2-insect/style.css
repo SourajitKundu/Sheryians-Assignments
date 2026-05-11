@@ -1,0 +1,22 @@
+:root {
+  --red: #b7322a;
+  --beige: #dabc92;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+.playfair {
+  font-family: "playfair Display", serif;
+}
+summary {
+  list-style: none;
+}
+summary::-webkit-details-maarker {
+  display: none;
+}
+.red {
+  color: #b7322a;
+}

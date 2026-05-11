@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Insect</title>
+
+    <link type="image/png" rel="icon" href="./assets/insect.webp" />
+  </head>
+  <body class="flex flex-col gap-10 relative">
+    <header class="absolute w-full z-50">
+      <section class="grid grid-cols-[1fr_3.5fr_5fr] h-28 w-full px-24 items-center gap-14">
+        <h1 class="font-semibold text-3xl uppercase">Insect</h1>
+        <div class="flex items-center gap-4 px-5 py-2 w-72 rounded-full bg-[#f0f0f0]">
+          <i class="fa-solid fa-magnifying-glass text-gray-400"></i>
+          <input type="text" placeholder="Search" class="bg-[#f0f0f0]" />
+        </div>
+        <nav>
+          <ul class="flex gap-20 justify-end text-white">
+            <li>Home</li>
+            <li>Shop</li>
+            <li>About</li>
+            <li>Gallery</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main class="w-full mx-auto flex flex-col gap-2 relative z-0">
+      <img src="./assets/insect.webp" alt="" class="absolute h-2/3 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+      <section class="grid grid-cols-2">
+        <div class="h-screen pl-44 flex items-center justify-start gap-20">
+          <!--Rotated Text-->
+          <h1 class="text-7xl [writing-mode:vertical-rl] rotate-180 italic font-serif">Classification</h1>
+          <!--List-->
+          <ul class="text-lg flex flex-col gap-4 list-disc marker:text-[var(--red)] w-1/4">
+            <li><strong>Class: </strong><br />Insecta</li>
+            <hr />
+
+            <li><strong>Order: </strong><br />Coleoptera</li>
+            <hr />
+
+            <li><strong>Family: </strong><br />Cerambycidae</li>
+            <hr />
+
+            <li><strong>Sub-Family: </strong><br />Cerambycinae</li>
+            <hr />
+
+            <li><strong>Tribe: </strong><br />Callichromatini</li>
+            <hr />
+
+            <li><strong>Genus: </strong><br />Pachyteria</li>
+          </ul>
+        </div>
+
+        <div class="bg-[var(--red)] h-screen pr-44 flex flex-col items-end justify-center text-white">
+          <div class="w-1/2">
+            <h1 class="text-7xl font-serif text-white">Pachyteria equestris</h1>
+            <div class="flex gap-5 justify-start items-center py-8">
+              <div>
+                <img src="./assets/diagram.png" alt="" class="h-40 object-cover" />
+                <h4 class="text-lg pt-3 text-center">32mm</h4>
+              </div>
+
+              <div class="bg-[var(--beige)] w-px h-40"></div>
+
+              <div class="flex flex-col gap-4 font-light pl-4">
+                <div class="flex gap-4">
+                  <i class="fa-solid fa-location-dot text-2xl text-[var(--beige)] mt-2"></i>
+
+                  <h4 class="text-lg">Locality:<br />Malaysia</h4>
+                </div>
+
+                <div class="flex gap-4">
+                  <i class="fa-solid fa-venus-mars text-2xl text-[var(--beige)] mt-2"></i>
+
+                  <h4 class="text-lg">Sex:<br />Male</h4>
+                </div>
+
+                <div class="flex gap-4">
+                  <i class="fa-solid fa-ruler-combined text-2xl text-[var(--beige)] mt-2"></i>
+
+                  <h4 class="text-lg">Size:<br />32 mm / 12 mm</h4>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="text-4xl font-semibold text-[var(--beige)]">$5.99</h4>
+
+            <div class="flex flex-col gap-3 pt-6">
+              <!-- Toggle 1 -->
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-6 bg-[var(--beige)] rounded-full relative">
+                  <div class="w-5 h-5 bg-white rounded-full absolute top-0.5 left-0.5"></div>
+                </div>
+
+                <p class="text-lg">View detailed antennae</p>
+              </div>
+
+              <!-- Toggle 2 -->
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-6 bg-[var(--beige)] rounded-full relative">
+                  <div class="w-5 h-5 bg-white rounded-full absolute top-0.5 left-0.5"></div>
+                </div>
+
+                <p class="text-lg">View underside</p>
+              </div>
+
+              <!-- Button -->
+              <button class="mt-4 bg-[var(--beige)] text-black w-64 py-4 rounded-2xl text-xl">Add to collection</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
