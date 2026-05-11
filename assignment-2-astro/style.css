@@ -1,0 +1,24 @@
+:root {
+  --orange: #e65c02;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+.playfair {
+  font-family: "playfair Display", serif;
+}
+summary {
+  list-style: none;
+}
+summary::-webkit-details-maarker {
+  display: none;
+}
+.orange {
+  color: #e65c02;
+}
+nav li:hover {
+  color: var(--orange);
+}

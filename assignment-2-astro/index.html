@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body class="bg-[#fcf4ee] flex flex-col gap-10">
+    <header class="border-b border-gray-400">
+      <section class="grid grid-cols-[1fr_5fr_1fr] h-20 w-4/5 mx-auto items-center gap-12">
+        <h1 class="font-semibold text-3xl uppercase">Astro<span class="orange">.</span></h1>
+        <nav>
+          <ul class="flex gap-12">
+            <li>Products</li>
+            <li>Category</li>
+            <li>About Us</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+        <div class="flex justify-end gap-10">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-arrow-down"></i>
+          <i class="fa-regular fa-user"></i>
+        </div>
+      </section>
+    </header>
+
+    <main class="w-4/5 mx-auto flex flex-col gap-2">
+      <section class="grid grid-cols-[1fr_3fr_1fr] gap-20">
+        <div class="flex flex-col gap-5">
+          <h3 class="font-medium orange">New</h3>
+          <h1 class="text-5xl uppercase font-semibold">Astro Winter Armor <span class="orange">II</span></h1>
+          <h2 class="text-xl font-semibold">$560</h2>
+          <p>Crafted from 100% organic cotton with a soft, breathable feel. Perfect for all seasons and everyday elegance.</p>
+          <hr />
+
+          <details name="faq" open>
+            <summary class="uppercase text-base font-medium flex justify-between pr-5">Description</summary>
+            <p class="pt-4">
+              A next-gen cold war jacket The essence of retro style and the resilience you need for extrerne winter conditions. Engineered to versatile function for your winter
+              wardrobe, accented with strategic utility details.
+            </p>
+            <h4 class="flex gap-3 text-sm font-medium items-center pt-4">Read More<i class="fa-solid fa-angle-right orange"></i></h4>
+          </details>
+          <hr />
+          <details name="faq">
+            <summary class="uppercase text-base font-medium flex justify-between pr-5 items-center">Material & Care<i class="fa-solid fa-angle-down"></i></summary>
+            <p class="pt-4">Lorem</p>
+          </details>
+          <hr />
+          <details name="faq">
+            <summary class="uppercase text-base font-medium flex justify-between pr-5 items-center">Shipping & Returnss <i class="fa-solid fa-angle-down"></i></summary>
+            <p class="pt-4">Lorem</p>
+          </details>
+        </div>
+
+        <div class="text-center">
+          <div>
+            <img src="./assets/image.webp" alt="" class="w-full" />
+          </div>
+          <div class="grid grid-cols-3 -mt-12 pb-10 justify-items-center">
+            <div class="flex items-start gap-4 pr-6 items-center">
+              <i class="fa-regular fa-snowflake text-2xl"></i>
+              <div>
+                <h4 class="uppercase font-regular text-sm">Extreme Warmth</h4>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 px-6 items-center">
+              <i class="fa-solid fa-shield text-2xl"></i>
+              <div>
+                <h4 class="uppercase font-regular text-sm">Wind Protection</h4>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 px-6 items-center">
+              <i class="fa-solid fa-feather-pointed text-2xl"></i>
+              <div>
+                <h4 class="uppercase font-regular text-sm">Lightweight</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-5">
+          <div class="size flex flex-col gap-3">
+            <h1 class="text-lg uppercase font-semibold text-center">Size</h1>
+            <div class="flex justify-around">
+              <span class="w-10 h-10 rounded-lg bg-[#f7efe9] flex justify-center items-center">S</span>
+              <span class="w-10 h-10 rounded-lg bg-[#e65c02] text-white flex justify-center items-center">M</span>
+              <span class="w-10 h-10 rounded-lg bg-[#f7efe9] flex justify-center items-center">L</span>
+              <span class="w-10 h-10 rounded-lg bg-[#f7efe9] flex justify-center items-center">XL</span>
+            </div>
+            <h4 class="flex justify-center text-sm font-medium items-center pt-4 gap-2">Size Guide<i class="fa-solid fa-angle-right orange"></i></h4>
+          </div>
+          <hr />
+          <h1 class="text-lg uppercase font-semibold text-center">color</h1>
+          <div class="grid grid-cols-2 grid-rows-2 gap-3">
+            <div>
+              <img src="./assets/image.webp" class="border border-[#e65c02] rounded-xl aspect-square object-cover" />
+              <h5 class="text-sm font-medium text-center">Beige</h5>
+            </div>
+            <div>
+              <img src="./assets/red.jpg" class="border rounded-xl aspect-square object-cover" />
+              <h5 class="text-sm font-medium text-center">Red</h5>
+            </div>
+            <div>
+              <img src="./assets/black.jpg" class="border rounded-xl aspect-square object-cover" />
+              <h5 class="text-sm font-medium text-center">Black</h5>
+            </div>
+            <div>
+              <img src="./assets/white.jpg" class="border rounded-xl aspect-square object-cover" />
+              <h5 class="text-sm font-medium text-center">White</h5>
+            </div>
+          </div>
+          <button class="flex gap-3 justify-center py-2.5 items-center border border-gray-300 rounded-full w-[90%] mx-auto">
+            <i class="fa-regular fa-heart"></i>Add to Wishlist
+          </button>
+          <button class="flex gap-3 justify-center py-3 items-center bg-[#e65c02] rounded-full text-white">Add to Bag<i class="fa-solid fa-bag-shopping"></i></button>
+        </div>
+      </section>
+
+      <section>
+        <div class="grid grid-cols-[repeat(4,1fr)] bg-[#f7efe9] rounded-3xl p-5 gap-7 border border-orange-200">
+          <div class="flex gap-5">
+            <img src="./assets/sd-1.jpg" class="w-32 shrink-0 object-top h-36 object-cover rounded-2xl" />
+            <div>
+              <h4 class="font-medium pb-3">
+                3x<br />
+                WATER-REPELLENT
+              </h4>
+              <p class="text-sm">The fabric repels rain, snow and moisture while keeping you dry and comfortable.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <img src="./assets/sd-2.jpg" class="w-32 shrink-0 object-top h-36 object-cover rounded-2xl" />
+            <div>
+              <h4 class="font-medium pb-3">
+                3D AREAS<br />
+                PUFFERED
+              </h4>
+              <p class="text-sm">Strategically trap Heat maximise insulation without the bulk.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <img src="./assets/sd-3.jpg" class="w-32 shrink-0 object-top h-36 object-cover rounded-2xl" />
+            <div>
+              <h4 class="font-medium h-14 pb-3">INSULATION</h4>
+              <p class="text-sm">AdvarEed warmth up to -WC for extreme cucmcftions.</p>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <img src="./assets/sd-4.jpg" class="w-32 shrink-0 object-top h-36 object-cover rounded-2xl" />
+            <div>
+              <h4 class="font-medium pb-3">
+                UTILITY<br />
+                POCKETS
+              </h4>
+              <p class="text-sm">Multi-functional pockets for secure storage on the go.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid grid-cols-4 bg-[#f7efe9] rounded-3xl p-6 border border-orange-200 mb-4">
+        <div class="flex items-start gap-4 pr-6 border-r border-gray-300">
+          <i class="fa-regular fa-snowflake text-2xl"></i>
+          <div>
+            <h4 class="uppercase font-semibold text-sm">Premium Fabrics</h4>
+            <p class="text-sm text-gray-600">Durable, high-performance materials.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 px-6 border-r border-gray-300">
+          <i class="fa-solid fa-shield text-2xl"></i>
+          <div>
+            <h4 class="uppercase font-semibold text-sm">Thermal Protection</h4>
+            <p class="text-sm text-gray-600">Built for extreme winter climates.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 px-6 border-r border-gray-300">
+          <i class="fa-regular fa-circle text-2xl text-[var(--orange)]"></i>
+          <div>
+            <h4 class="uppercase font-semibold text-sm">Designed For Function</h4>
+            <p class="text-sm text-gray-600">Every detail serves a purpose.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 pl-6">
+          <i class="fa-regular fa-star text-2xl text-[var(--orange)]"></i>
+          <div>
+            <h4 class="uppercase font-semibold text-sm">Limited Edition</h4>
+            <p class="text-sm text-gray-600">Exclusive drops, limited quantities.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
