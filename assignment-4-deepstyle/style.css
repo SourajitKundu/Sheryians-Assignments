@@ -1,0 +1,29 @@
+:root {
+  --orange: #e65c02;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+body {
+  background-color: #fefefe;
+}
+.playfair {
+  font-family: "playfair Display", serif;
+}
+.bento img {
+  object-fit: cover;
+  object-position: top;
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.orange {
+  color: #e65c02;
+}
+nav li:hover {
+  color: var(--orange);
+}
