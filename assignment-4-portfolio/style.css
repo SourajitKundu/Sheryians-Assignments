@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "clash";
+  src: url("./assets/font/ClashDisplay-Variable.ttf") format("truetype");
+  font-weight: 200 900;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+h1,
+h3 {
+  font-family: "clash", sans-serif;
+}
+.grid > * {
+  border-radius: 20px;
+}
+.clip-css {
+  clip-path: polygon(0 0, 100% 0, 60% 100%, 0 100%);
+  height: 6%;
+  width: 40%;
+}
+.corner-angle {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  rotate: -45deg;
+}
+.corner-angle-big {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  rotate: -45deg;
+  font-size: 50px;
+}

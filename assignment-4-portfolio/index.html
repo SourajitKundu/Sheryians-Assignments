@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Portfolio Grid</title>
+
+    <link rel="icon" type="image/png" href="./assets/person.png" />
+  </head>
+  <body>
+    <header></header>
+    <main class="flex items-center justify-center gap-5">
+      <div id="header">
+        <nav class="[writing-mode:vertical-rl] rotate-180 cursor-pointer">
+          <ul class="flex gap-10 font-medium text-xl">
+            <li>Podcast</li>
+            <li>Portfolio</li>
+            <li>Research</li>
+            <li>Clients</li>
+          </ul>
+        </nav>
+      </div>
+      <section id="bento" class="content-center">
+        <div class="grid grid-cols-1 grid-cols-[2fr_3fr] gap-10 h-screen max-w-[1600px] aspect-[3/2] py-12">
+          <div class="bg-[#8184d2] flex items-end p-10 mt-[4%] relative">
+            <div class="absolute top-0 left-0 bg-white flex items-center pl-4 gap-4 -mt-1 -ml-2 clip-css">
+              <h4 class="text-lg font-medium">
+                <span><i class="bi bi-plus-lg pr-1"></i></span>About Me
+              </h4>
+            </div>
+            <div class="absolute top-[7%] right-[10%] w-3/4 aspect-square border border-white border-8 rounded-full">
+              <img
+                src="./assets/person.png"
+                alt=""
+                class="object-cover object-top w-full h-full rounded-full grayscale scale-[1.15] hover:grayscale-0 hover:scale-100 transition-all duration-300 ease-in-out relative z-10" />
+              <div class="absolute bg-[#efaeff] rounded-full inset-3"></div>
+            </div>
+            <div class="text-white">
+              <h1 class="text-6xl">
+                <span class="font-thin">I'm</span><br />
+                <span class="font-medium">
+                  Rio<br />
+                  Kundu
+                </span>
+              </h1>
+              <h3 class="border-b border-dashed py-2">
+                sourajitkundu@gmail.com <span><i class="bi bi-envelope-fill pl-2"></i></span>
+              </h3>
+            </div>
+            <div class="w-[25%] aspect-square bg-black rounded-full animate-[spin_10s_linear_infinite] absolute bottom-[20%] right-[10%]">
+              <svg viewbox="0 0 100 100" class="w-full h-full">
+                <defs>
+                  <path
+                    id="circle"
+                    d="
+                      M 50,50
+                      m -32,0
+                      a 32,32 0 1,1 64,0
+                      a 32,32 0 1,1 -64,0
+                    " />
+                </defs>
+
+                <text fill="white" font-size="10" letter-spacing="2">
+                  <textPath href="#circle">DESIGN • PORTFOLIO • 2025 •</textPath>
+                </text>
+              </svg>
+            </div>
+          </div>
+          <div class="grid grid-rows-[1fr_2fr_1.5fr] grid-cols-[repeat(12,1fr)] gap-10">
+            <!--1st Row-->
+            <div class="col-span-full [container-type:size] relative">
+              <h1 class="font-semibold text-[100cqh] leading-none">Portfolio</h1>
+              <i class="fa-solid fa-chevron-right corner-angle-big"></i>
+            </div>
+            <!--2nd Row-->
+            <div class="col-span-9 bg-[url('./assets/video-bg.jpg')] bg-cover relative">
+              <div class="py-5 px-6 rounded-full bg-white/70 w-fit border-none text-3xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer">
+                <i class="bi bi-caret-right-fill"></i>
+              </div>
+            </div>
+            <div class="col-span-3 grid grid-cols-1 grid-rows-2 overflow-hidden">
+              <div class="bg-[#a9d9d7] rounded-none flex justify-center items-center relative">
+                <div>
+                  <h1 class="text-4xl font-medium">251</h1>
+                  <h3 class="text-2xl">Projects</h3>
+                  <i class="fa-solid fa-chevron-right corner-angle"></i>
+                </div>
+              </div>
+              <div class="bg-[#8f71bd] rounded-none flex justify-center items-center text-white relative">
+                <div>
+                  <h1 class="text-4xl font-medium">156</h1>
+                  <h3 class="text-2xl">Awards</h3>
+                  <i class="fa-solid fa-chevron-right corner-angle"></i>
+                </div>
+              </div>
+            </div>
+            <!--3rd Row-->
+            <div class="col-span-5 bg-[#585858] text-white content-center text-center">
+              <div>
+                <i class="bi bi-apple text-5xl"></i>
+                <h3 class="text-2xl pt-3">Clients</h3>
+              </div>
+            </div>
+            <div class="col-span-7 bg-black flex justify-between items-center">
+              <div class="w-[35%] flex items-center justify-center">
+                <img src="./assets/sphere.png" alt="" class="object-contain w-2/3" />
+              </div>
+              <div class="bg-[#fec267] flex justify-center items-center w-[65%] h-full rounded-[20px] relative">
+                <div>
+                  <h1 class="text-4xl font-medium">172</h1>
+                  <h3 class="text-xl">Global Design</h3>
+                  <h3 class="text-2xl">Awards</h3>
+                  <i class="fa-solid fa-chevron-right corner-angle"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
