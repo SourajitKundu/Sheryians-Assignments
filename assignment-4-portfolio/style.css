@@ -43,3 +43,14 @@ h3 {
   rotate: -45deg;
   font-size: 50px;
 }
+.left-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5.5%;
+  background: transparent;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: -10px -10px 0 #fff;
+}
