@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+h1 {
+  font-family: sans-serif;
+}
+
+.scroller-wrapper {
+  animation: infi-scroll 12s linear infinite;
+}
+
+@keyframes infi-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@media (orientation: portrait) {
+  nav {
+    display: none;
+  }
+}

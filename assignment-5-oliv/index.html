@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Portfolio Grid</title>
+
+    <link rel="icon" type="image/png" href="./assets/person.png" />
+  </head>
+  <body>
+    <header class="w-[90%] mx-auto">
+      <div class="flex justify-between items-center h-32 border-b">
+        <div class="flex gap-5">
+          <img src="./assets/logo.svg" alt="" class="scale-125" />
+          <button class="px-3 py-1 text-sm bg-[#edded5] rounded-2xl">We are Hiring</button>
+        </div>
+        <div class="flex justify-end gap-10 items-center">
+          <nav>
+            <ul class="flex gap-10">
+              <li>Work</li>
+              <li>Services</li>
+              <li>About</li>
+              <li>Blog</li>
+              <li>Pages</li>
+            </ul>
+          </nav>
+          <button class="hidden lg:block">Cart <span class="bg-[#edded5] rounded-full px-1">0</span></button>
+          <button class="px-5 py-2 border border-black rounded-full">Get in Touch</button>
+        </div>
+      </div>
+    </header>
+    <main class="w-[90%] mx-auto">
+      <!--Hero-->
+      <section class="flex flex-col gap-7 justify-center h-[calc(100vh-128px)]">
+        <h1 class="text-4xl md:text-6xl lg:text-9xl lg:w-[20ch] lg:leading-[0.8]">Building Brands, One Success Story at a Time.</h1>
+        <h3 class="text-lg lg:text-3xl lg:w-[45ch]">Create a Brand That Resonates: We Can Help You Define and Communicate Your Unique Message.</h3>
+        <button class="px-7 py-4 font-sans text-white text-lg bg-black rounded-full w-fit">Our Services</button>
+      </section>
+
+      <section class="flex gap-32 overflow-hidden h-16">
+        <div class="flex items-center gap-32 shrink-0 [&>*]:scale-150 scroller-wrapper">
+          <img src="./assets/client-logo-01.svg" alt="" />
+          <img src="./assets/client-logo-02.svg" alt="" />
+          <img src="./assets/client-logo-03.svg" alt="" />
+          <img src="./assets/client-logo-04.svg" alt="" />
+          <img src="./assets/client-logo-07.svg" alt="" />
+          <img src="./assets/client-logo-06.svg" alt="" />
+        </div>
+
+        <div class="flex items-center gap-32 shrink-0 [&>*]:scale-150 scroller-wrapper">
+          <img src="./assets/client-logo-01.svg" alt="" />
+          <img src="./assets/client-logo-02.svg" alt="" />
+          <img src="./assets/client-logo-03.svg" alt="" />
+          <img src="./assets/client-logo-04.svg" alt="" />
+          <img src="./assets/client-logo-07.svg" alt="" />
+          <img src="./assets/client-logo-06.svg" alt="" />
+        </div>
+      </section>
+
+      <section class="py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-10 [&>*]:bg-[#f4f4f5] [&>*]:p-10 lg:[&>*]:aspect-[3/4]">
+          <div class="flex flex-col gap-5">
+            <h2 class="text-4xl">Brand Strategy</h2>
+            <p class="text-lg text-black/70 w-[20ch]">We help businesses define their unique brand message and branding positioning.</p>
+            <h6 class="underline font-medium">About Strategy</h6>
+          </div>
+          <div class="flex flex-col gap-5">
+            <h2 class="text-4xl">Visual Identity</h2>
+            <p class="text-lg text-black/70 w-[20ch]">We create visual elements such as logos, packaging, and marketing materials for your brand.</p>
+            <h6 class="underline font-medium">About Identity</h6>
+          </div>
+          <div class="flex flex-col gap-5">
+            <h2 class="text-4xl">Digital Marketing</h2>
+            <p class="text-lg text-black/70 w-[20ch]">We help businesses to promote their brand online and create engaging digital experiences.</p>
+            <h6 class="underline font-medium">About Marketing</h6>
+          </div>
+          <div class="flex flex-col gap-5">
+            <h2 class="text-4xl">Brand Manage­ment</h2>
+            <p class="text-lg text-black/70 w-[20ch]">We help businesses to implement their brand across all touchpoints and ensure consistency.</p>
+            <h6 class="underline font-medium">About Management</h6>
+          </div>
+        </div>
+      </section>
+
+      <!--Work-->
+      <section class="py-20">
+        <h6 class="uppercase text-sm">Our Work</h6>
+        <hr class="my-12" />
+        <div class="flex justify-between items-center mb-12">
+          <h2 class="text-3xl lg:text-6xl">Selected Work</h2>
+          <button class="text-sm px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white">All Work</button>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-5">
+          <div>
+            <div class="overflow-hidden">
+              <img src="./assets/project-01-thumb.webp" alt="" class="object-cover hover:scale-125 transition-all duration-1000 ease-in-out" />
+            </div>
+            <div class="flex justify-between items-center my-6">
+              <h5 class="text-xl">Invision Studio</h5>
+              <button class="text-sm px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white">Marketing</button>
+            </div>
+          </div>
+          <div>
+            <div class="overflow-hidden">
+              <img src="./assets/project-02-thumb.webp" alt="" class="object-cover hover:scale-125 transition-all duration-1000 ease-in-out" />
+            </div>
+            <div class="flex justify-between items-center my-6">
+              <h5 class="text-xl">Square Media</h5>
+              <button class="text-sm px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white">Branding</button>
+            </div>
+          </div>
+          <div>
+            <div class="overflow-hidden">
+              <img src="./assets/project-03-thumb.webp" alt="" class="object-cover hover:scale-125 transition-all duration-1000 ease-in-out" />
+            </div>
+            <div class="flex justify-between items-center my-6">
+              <h5 class="text-xl">Vision Design</h5>
+              <button class="text-sm px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white">Social Media</button>
+            </div>
+          </div>
+          <div>
+            <div class="overflow-hidden">
+              <img src="./assets/project-04-thumb.webp" alt="" class="object-cover hover:scale-125 transition-all duration-1000 ease-in-out" />
+            </div>
+            <div class="flex justify-between items-center my-6">
+              <h5 class="text-xl">Design Bros</h5>
+              <button class="text-sm px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white">Branding</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Values-->
+      <section class="py-20">
+        <h6 class="uppercase text-sm">Our Values</h6>
+        <hr class="my-12" />
+        <div class="grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-2 gap-10 [&>*]:p-10 [&>*]:min-h-[400px] lg:[&>*]:min-h-[500px]">
+          <!--Work 1-->
+          <div class="bg-[#f1f5f9]">
+            <h6 class="text-xs mb-5">Services</h6>
+            <h4 class="text-2xl mb-5 w-[15ch]">Our Approach to Branding.</h4>
+            <button class="bg-black text-white px-7 py-3 rounded-full mt-[13vh]">About Oliv</button>
+          </div>
+
+          <!--Work 2-->
+          <div class="bg-[#f1f6f5] flex flex-col justify-between">
+            <h6 class="uppercase text-sm">
+              Helping Brands<br />
+              Stand Out
+            </h6>
+            <h4 class="uppercase text-2xl">
+              Bold Moves,<br />
+              Big Impact.
+            </h4>
+          </div>
+
+          <!--Work 3-->
+          <div class="bg-[#f1f6f5] flex flex-col justify-between">
+            <h6 class="uppercase text-sm">
+              How We Work <br />
+              with Our Client
+            </h6>
+            <h4 class="uppercase text-2xl">
+              Honesty is the <br />
+              Best Policy.
+            </h4>
+          </div>
+
+          <!--Work 4-->
+          <div class="bg-[#f8f8f8] flex flex-col justify-between lg:row-start-2 lg:col-start-2">
+            <h6 class="uppercase text-sm">Collaboration is Key</h6>
+            <h4 class="uppercase text-2xl">
+              Building Strong <br />
+              Partnerships.
+            </h4>
+          </div>
+
+          <!--Work 5-->
+          <div class="bg-[#f8ede3] flex flex-col justify-between lg:row-start-2 lg:col-start-3">
+            <h6 class="uppercase text-sm">Our Approach</h6>
+            <h4 class="uppercase text-2xl">
+              Achieving <br />
+              Real Results.
+            </h4>
+          </div>
+
+          <!--Work 6-->
+          <div class="bg-[#fffae7] flex flex-col justify-between lg:row-start-2 lg:col-start-4">
+            <h6 class="uppercase text-sm">Our Philosophy</h6>
+            <h4 class="uppercase text-2xl">
+              Building Trust, <br />
+              Not Pitching.
+            </h4>
+          </div>
+        </div>
+      </section>
+
+      <section class="h-screen">
+        <div class="lg:w-1/2 mx-auto">
+          <h2 class="text-3xl lg:text-6xl py-20">Crafting Exceptional Digital Experiences Across Al Platforms: Our Goal at Øliv.</h2>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 text-black/70">
+            <p>
+              At Øliv, our goal is to craft exceptional digital experiences across all platforms. In today's digitally driven world, having a strong online presence is paramount
+              for businesses to connect with their target audience effectively. We understand the importance of delivering seamless and engaging experiences that leave a lasting
+              impression.
+            </p>
+            <p>
+              Our team of skilled designers, developers, and digital strategists collaborate to create customized digital solutions tailored to your unique business needs. Whether
+              it's designing a user-friendly website, developing a mobile application, or enhancing your e-commerce platform, we strive to provide solutions that not only meet but
+              exceed your expectations.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--Team-->
+      <section class="py-20">
+        <h6 class="uppercase text-sm">our team</h6>
+        <hr class="my-12" />
+        <div class="flex justify-between items-center mb-12">
+          <h2 class="text-3xl lg:text-6xl">Our Team of Experts</h2>
+          <button class="text-sm px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white shrink-0">About Us</button>
+        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-5">
+          <div class="bg-[#f1f6f5] p-10">
+            <h6 class="text-xs mb-5">Join the Team</h6>
+            <h4 class="lg:text-2xl mb-5 lg:w-[10ch]">Want to shape the future of branding?</h4>
+            <p class="text-xs text-black/50">Join us and shape the future of branding today!</p>
+            <button class="bg-black text-white px-3 lg:px-7 py-1 lg:py-3 rounded-full mt-[5vw]">About Oliv</button>
+          </div>
+          <div>
+            <div class="overflow-hidden">
+              <img src="./assets/team-01-p-500.webp" alt="" class="object-cover object-top" />
+            </div>
+            <div class="flex justify-between items-center my-6">
+              <h5 class="text-xl">Devon Lane</h5>
+              <button class="text-sm px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white">Branding</button>
+            </div>
+          </div>
+          <div>
+            <div class="overflow-hidden">
+              <img src="./assets/team-02-p-500.webp" alt="" class="object-cover object-top" />
+            </div>
+            <div class="flex justify-between items-center my-6">
+              <h5 class="text-xl">Chris Watson</h5>
+              <button class="text-sm px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white">Branding</button>
+            </div>
+          </div>
+          <div>
+            <div class="overflow-hidden">
+              <img src="./assets/team-03-p-500.webp" alt="" class="object-cover object-top" />
+            </div>
+            <div class="flex justify-between items-center my-6">
+              <h5 class="text-xl">Branding</h5>
+              <button class="text-sm px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white">Branding</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20">
+        <div class="lg:w-3/4 ml-auto">
+          <div class="lg:flex justify-between">
+            <div class="lg:w-[33%] mb-12 lg:mb-0">
+              <img src="./assets/client-logo-02.svg" alt="" />
+            </div>
+            <div class="lg:w-[66%]">
+              <h2 class="text-3xl lg:text-5xl pb-12">“We couldn't be happier with the branding strategy developed.”</h2>
+              <p>
+                We approached Øliv for a complete rebranding of our company and we couldn't be happier with the results. Their market research and analysis helped us define our
+                target audience and unique brand positioning. Their team then created a visually compelling logo and consistent branding across all touchpoints. <br />
+                <br />
+                The new brand has helped us stand out in the market and increase sales. We highly recommend Øliv to any business looking to rebrand or refresh their brand.
+              </p>
+            </div>
+          </div>
+
+          <hr class="my-20" />
+
+          <div class="lg:flex justify-between">
+            <div class="lg:w-[33%] mb-12 lg:mb-0">
+              <img src="./assets/client-logo-06.svg" alt="" />
+            </div>
+            <div class="lg:w-[66%]">
+              <h2 class="text-3xl lg:text-5xl pb-12">“ “Expert Brand Management from Øliv””</h2>
+              <p>
+                As a growing business, it was important for us to have a strong and consistent brand. Øliv's brand management services helped us to achieve this. They conducted a
+                thorough brand audit and provided valuable insights and recommendations.
+                <br /><br />
+                Their ongoing monitoring and implementation of our brand has helped us maintain consistency and stay aligned with our business goals. We couldn't be happier with
+                the results and highly recommend Øliv's brand management services.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Contact-->
+      <section class="py-20">
+        <div class="bg-[#f1f6f5] p-16 h-[80vh]">
+          <div class="lg:flex justify-between">
+            <div class="lg:w-[30%] mb-5">
+              <h6 class="text-sm">Contact</h6>
+            </div>
+            <div class="lg:w-[70%] flex flex-col gap-8">
+              <h2 class="text-3xl md:text-5xl lg:text-7xl lg:w-[20ch]">Let's start building your brand's unique story together.</h2>
+              <h3 class="lg:text-3xl lg:w-[45ch]">Want to see what a difference a strong brand can make? Request a consultation today.</h3>
+              <button class="px-7 py-3 text-white text-lg bg-black rounded-full w-fit">Get In Touch</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Blog-->
+      <section class="py-20">
+        <h6 class="uppercase text-sm">Blog</h6>
+        <hr class="my-12" />
+        <div class="flex justify-between items-center mb-12">
+          <h2 class="text-3xl lg:text-6xl">Insights on Branding</h2>
+          <button class="text-sm px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white shrink-0">See All</button>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-x-10 gap-y-5">
+          <div class="flex flex-col gap-4">
+            <div class="overflow-hidden">
+              <img src="./assets/post-01-thumb-p-500.webp" alt="" class="object-cover hover:scale-110 transition-all duration-1000 ease-in-out" />
+            </div>
+            <h5 class="text-xl">The Importance of a Strong Brand Positioning</h5>
+            <button class="text-sm w-fit">Read More</button>
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <div class="overflow-hidden">
+              <img src="./assets/post-02-thumb-p-500.webp" alt="" class="object-cover hover:scale-110 transition-all duration-1000 ease-in-out" />
+            </div>
+            <h5 class="text-xl">Creating a Consistent Brand Identity Across All Touchpoints</h5>
+            <button class="text-sm w-fit">Read More</button>
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <div class="overflow-hidden">
+              <img src="./assets/post-03-thumb-p-500.webp" alt="" class="object-cover hover:scale-110 transition-all duration-1000 ease-in-out" />
+            </div>
+            <h5 class="text-xl">The Role of Market Research in Branding Strategy</h5>
+            <button class="text-sm w-fit">Read More</button>
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <div class="overflow-hidden">
+              <img src="./assets/post-04-thumb-p-500.webp" alt="" class="object-cover hover:scale-110 transition-all duration-1000 ease-in-out" />
+            </div>
+            <h5 class="text-xl">The Impact of Social Media on Branding</h5>
+            <button class="text-sm w-fit">Read More</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="w-[90%] mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-10 pb-40 border-b">
+        <!--footer-1-->
+        <div>
+          <img src="./assets/logo.svg" alt="" />
+          <div class="flex gap-5 [&>*]:bg-[#f0f8ff] [&>*]:w-10 [&>*]:h-10 [&>*]:rounded-full [&>*]:content-center [&>*]:text-center mt-10">
+            <i class="text-lg ri-instagram-line"></i>
+            <i class="text-lg ri-twitter-fill"></i>
+            <i class="text-lg ri-behance-line"></i>
+          </div>
+        </div>
+
+        <!--footer-2-->
+        <div>
+          <h6 class="text-lg">Pages</h6>
+          <hr class="my-6" />
+          <ul class="space-y-6 text-xs">
+            <li>Home</li>
+            <li>Services</li>
+            <li>About</li>
+            <li>Jobs</li>
+            <li>Contact</li>
+          </ul>
+          <button class="bg-black text-white px-7 py-3 rounded-full mt-8">More Templates</button>
+        </div>
+
+        <!--footer-3-->
+        <div>
+          <h6 class="text-lg">CMS</h6>
+          <hr class="my-6" />
+          <ul class="space-y-6 text-xs">
+            <li>Work</li>
+            <li>Work Single</li>
+            <li>Blog</li>
+            <li>Blog Single</li>
+            <li>Shop</li>
+            <li>Shop Single</li>
+          </ul>
+        </div>
+
+        <!--footer-4-->
+        <div>
+          <h6 class="text-lg">Utility Pages</h6>
+          <hr class="my-6" />
+          <ul class="space-y-6 text-xs">
+            <li>404 Error Page</li>
+            <li>Password Protected</li>
+            <li>Styleguide</li>
+            <li>Licencing</li>
+            <li>Changelog</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="lg:flex justify-between items-center py-8 text-black/60">
+        <p>Made by <span class="text-black underline">Sourajit Kundu</span> | Powered by <span class="text-black underline">Webflow</span></p>
+        <ul class="flex gap-7 mt-5 lg:mt-0">
+          <li>Privacy</li>
+          <li>Imprint</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
