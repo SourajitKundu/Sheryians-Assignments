@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="icon" type="image/png" href="./assets/person.png" />
+
+    <title>Organic Tea</title>
+  </head>
+  <body>
+    <header class="fixed top-0 w-screen z-[999]">
+      <nav class="w-full border-b border-black bg-[#f4f1ec] px-5 py-4">
+        <div class="flex items-center justify-between">
+          <!-- Left -->
+          <div class="flex items-center gap-10">
+            <div class="flex items-center gap-2 cursor-pointer">
+              <h1 class="text-2xl">Shop</h1>
+              <i class="ri-arrow-down-s-line text-xl"></i>
+            </div>
+
+            <div class="flex items-center gap-2 cursor-pointer">
+              <h1 class="text-2xl">Learn</h1>
+              <i class="ri-arrow-down-s-line text-xl"></i>
+            </div>
+
+            <div class="flex items-center gap-2 cursor-pointer">
+              <h1 class="text-2xl">Reviews</h1>
+              <i class="ri-star-fill text-[#ffbf00] text-xl"></i>
+            </div>
+          </div>
+
+          <!-- Logo -->
+          <img src="./assets/Two-Leaves-and-a-Bud_logo_Indigo.png" class="h-14 object-contain absolute left-1/2 -translate-x-1/2" />
+
+          <!-- Right -->
+          <div class="flex items-center gap-10">
+            <h5 class="uppercase tracking-wide text-sm cursor-pointer">My Account</h5>
+
+            <h5 class="uppercase tracking-wide text-sm cursor-pointer">Cafe & Wholesale Partners</h5>
+
+            <h5 class="uppercase tracking-wide text-sm cursor-pointer">Tea Journal</h5>
+
+            <!-- Cart -->
+            <div class="relative cursor-pointer">
+              <i class="ri-shopping-bag-line text-3xl"></i>
+
+              <div class="absolute -top-1 -right-2 w-5 h-5 rounded-full bg-[#ffbf00] border border-black flex items-center justify-center text-[10px] font-bold">0</div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="banner">
+        <div class="w-full h-[90vh] flex flex-col justify-end bg-[url('./assets/banner.webp')] bg-cover p-10">
+          <div class="flex flex-col gap-5">
+            <h1 class="text-white text-8xl tracking-tighter w-[12ch]">A cup that fits the moment.</h1>
+            <p class="text-white text-lg w-[40ch] font-medium">From compostable whole leaf tea sachets and iced tea to tea lattes and matcha, we’ve got something for everyone.</p>
+            <button class="px-14 py-3 bg-[#2a2857] text-white text-lg rounded-full w-fit">Shop Now</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="best-seller" class="py-32">
+        <h1 class="text-7xl tracking-tighter mx-auto w-fit text-center pb-28">
+          A <i class="font-light">great</i> cup starts with a careful<br />
+          pluck - the top two leaves and a bud.
+        </h1>
+        <h2 class="text-6xl mx-auto bg-[#daaeea] rotate-[-3deg]">Best Sellers</h2>
+        <div class="grid grid-cols-5 gap-5 py-16 px-10">
+          <!--Product 1-->
+          <div class="cursor-pointer">
+            <div
+              class="relative w-full aspect-[1/1.1] border border-black rounded-lg p-3 bg-[#c1ee91] bg-[url('./assets/organic_tropical_green_tea_sachet_featured.webp')] bg-contain bg-center mb-4">
+              <h2 class="text-2xl bg-white">TEA SACHETS</h2>
+              <p class="absolute top-3 right-3">★ 4.71(84)</p>
+              <div class="absolute bottom-3 right-3 border border-black rounded-lg text-center w-14 h-14 bg-white">
+                <span class="text-lg">+</span><br />
+                <span>Add</span>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3">
+              <h1 class="text-2xl">Organic Tropical Green Tea</h1>
+              <h6>From $11.95</h6>
+              <p class="text-sm text-black/60">Our Organic Tropical Green is a fruity and fun take on a classic green tea.</p>
+            </div>
+          </div>
+
+          <!--Product 2-->
+          <div class="cursor-pointer">
+            <div
+              class="relative w-full aspect-[1/1.1] border border-black rounded-lg p-3 bg-[#c1ee91] bg-[url('./assets/organic_tropical_green_tea_sachet_featured.webp')] bg-contain bg-center mb-4">
+              <h2 class="text-2xl bg-white">TEA SACHETS</h2>
+              <p class="absolute top-3 right-3">★ 4.71(84)</p>
+              <div class="absolute bottom-3 right-3 border border-black rounded-lg text-center w-14 h-14 bg-white">
+                <span class="text-lg">+</span><br />
+                <span>Add</span>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3">
+              <h1 class="text-2xl">Organic Tropical Green Tea</h1>
+              <h6>From $11.95</h6>
+              <p class="text-sm text-black/60">Our Organic Tropical Green is a fruity and fun take on a classic green tea.</p>
+            </div>
+          </div>
+
+          <!--Product 3-->
+          <div class="cursor-pointer">
+            <div
+              class="relative w-full aspect-[1/1.1] border border-black rounded-lg p-3 bg-[#c1ee91] bg-[url('./assets/organic_tropical_green_tea_sachet_featured.webp')] bg-contain bg-center mb-4">
+              <h2 class="text-2xl bg-white">TEA SACHETS</h2>
+              <p class="absolute top-3 right-3">★ 4.71(84)</p>
+              <div class="absolute bottom-3 right-3 border border-black rounded-lg text-center w-14 h-14 bg-white">
+                <span class="text-lg">+</span><br />
+                <span>Add</span>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3">
+              <h1 class="text-2xl">Organic Tropical Green Tea</h1>
+              <h6>From $11.95</h6>
+              <p class="text-sm text-black/60">Our Organic Tropical Green is a fruity and fun take on a classic green tea.</p>
+            </div>
+          </div>
+
+          <!--Product 4-->
+          <div class="cursor-pointer">
+            <div
+              class="relative w-full aspect-[1/1.1] border border-black rounded-lg p-3 bg-[#c1ee91] bg-[url('./assets/organic_tropical_green_tea_sachet_featured.webp')] bg-contain bg-center mb-4">
+              <h2 class="text-2xl bg-white">TEA SACHETS</h2>
+              <p class="absolute top-3 right-3">★ 4.71(84)</p>
+              <div class="absolute bottom-3 right-3 border border-black rounded-lg text-center w-14 h-14 bg-white">
+                <span class="text-lg">+</span><br />
+                <span>Add</span>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3">
+              <h1 class="text-2xl">Organic Tropical Green Tea</h1>
+              <h6>From $11.95</h6>
+              <p class="text-sm text-black/60">Our Organic Tropical Green is a fruity and fun take on a classic green tea.</p>
+            </div>
+          </div>
+
+          <!--Product 5-->
+          <div class="cursor-pointer">
+            <div
+              class="relative w-full aspect-[1/1.1] border border-black rounded-lg p-3 bg-[#c1ee91] bg-[url('./assets/organic_tropical_green_tea_sachet_featured.webp')] bg-contain bg-center mb-4">
+              <h2 class="text-2xl bg-white">TEA SACHETS</h2>
+              <p class="absolute top-3 right-3">★ 4.71(84)</p>
+              <div class="absolute bottom-3 right-3 border border-black rounded-lg text-center w-14 h-14 bg-white">
+                <span class="text-lg">+</span><br />
+                <span>Add</span>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3">
+              <h1 class="text-2xl">Organic Tropical Green Tea</h1>
+              <h6>From $11.95</h6>
+              <p class="text-sm text-black/60">Our Organic Tropical Green is a fruity and fun take on a classic green tea.</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="block px-14 py-3 bg-[#2a2857] text-white text-lg rounded-full w-fit mx-auto">Explore All Teas</button>
+      </section>
+
+      <hr class="border-black" />
+
+      <section id="discover" class="py-28">
+        <div class="w-1/2 mx-auto">
+          <h2 class="text-6xl bg-[#ff7f31] rotate-[-3deg]">Discover</h2>
+          <h1 class="text-7xl tracking-tighter mx-auto w-fit pb-16">
+            Let’s find a cup that fits the moment.<br />
+            What are you searching for?
+          </h1>
+
+          <div class="w-fit border border-black rounded-2xl px-10 py-6 text-[#a8a39b]">
+            <h1 class="text-5xl font-thin">herbal tea...</h1>
+          </div>
+
+          <div class="h-32"></div>
+
+          <div
+            class="flex flex-wrap gap-3 [&>*]:px-6 [&>*]:py-2 [&>*]:rounded-2xl [&>*]:border [&>*]:border-black [&>*]:bg-[#d8e5fb] [&>*]:text-3xl [&>*]:font-['Cormorant_Garamond']">
+            <button>A Sweet Treat</button>
+
+            <button>Evening Unwind</button>
+
+            <button>Focused & Clear</button>
+
+            <button>Caffeine!</button>
+
+            <button>Caffeine-Free</button>
+
+            <button>Ceremony-Worthy</button>
+
+            <button>Whole Leaf</button>
+
+            <button>Over Ice</button>
+
+            <button>Lattes</button>
+
+            <button>Black Tea</button>
+
+            <button>Green Tea</button>
+
+            <button>Herbal Tea</button>
+
+            <button>Organic</button>
+
+            <button>Barista Favorite</button>
+
+            <button>Calm & Cozy</button>
+
+            <button>Fruit Forward</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="our-origins">
+        <div class="bg-[url('./assets/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp')] bg-cover h-[200vh] flex flex-col justify-between items-center py-32">
+          <h2 class="text-6xl bg-[#a2c9fc] rotate-[-3deg]">Our origins</h2>
+          <h3 class="text-white text-[150px] font-bold uppercase font-['Bebas Neue'] text-center leading-none">
+            born in<br />
+            colorado
+          </h3>
+          <h1 class="text-white text-6xl tracking-tighter text-center">
+            Our founder, Richard, started Two Leaves and a Bud in pursuit<br />
+            of a truly great cup. Two decades later, that same care and<br />
+            curiosity guide everything we make.
+          </h1>
+          <div class="w-[30vw] text-center">
+            <div class="grid grid-cols-3 gap-12 pb-16">
+              <div>
+                <img src="./assets/Quality_without_pretense.svg" alt="" class="w-3/4 mx-auto" />
+                <h5 class="text-white font-medium text-center">Quality, Without Pretense</h5>
+              </div>
+              <div>
+                <img src="./assets/care_for_ppl_1.svg" alt="" class="w-3/4 mx-auto" />
+                <h5 class="text-white font-medium text-center">Care for People & Planet</h5>
+              </div>
+              <div>
+                <img src="./assets/transparent_sourcing.svg" alt="" class="w-3/4 mx-auto" />
+                <h5 class="text-white font-medium text-center">Transparent Sourcing</h5>
+              </div>
+            </div>
+            <button class="px-14 py-3 bg-white text-lg rounded-full w-fit">Our Story</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" class="py-28">
+        <div class="w-1/2 mx-auto">
+          <h2 class="text-6xl bg-[#73bc25] rotate-[-3deg]">Reviews</h2>
+          <h1 class="text-7xl tracking-tighter mx-auto w-fit pb-16">
+            Let's find a cup that fits the moment.<br />
+            What are you searching for?
+          </h1>
+
+          <div class="h-20"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 w-4/5 mx-auto">
+          <!-- Card 1 -->
+          <div class="relative rounded-2xl border border-black p-3 min-h-[420px] flex flex-col justify-between bg-[#e8a47f]">
+            <div class="text-center mt-16">
+              <h1 class="text-3xl leading-tight">“The right amount of spice.”</h1>
+
+              <p class="mt-6 text-gray-600">Angelina R.</p>
+            </div>
+
+            <div class="flex items-center justify-between border border-black rounded-2xl overflow-hidden bg-[#eb6d3c]">
+              <div class="flex items-center gap-3 px-1 py-4">
+                <img src="./assets/organic_high_mountain_chai_tea_sachet_featured.webp" class="w-14 object-contain scale-110 border-r border-black" />
+
+                <h5 class="text-white text-sm leading-none uppercase">
+                  Organic<br />
+                  Mountain<br />
+                  High Chai
+                </h5>
+              </div>
+
+              <button class="mr-3 w-16 py-2 rounded-full bg-white border border-black text-xl">Shop</button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="relative rounded-2xl border border-black p-3 min-h-[420px] flex flex-col justify-between bg-[#a8d56d]">
+            <div class="text-center mt-6 px-3">
+              <h1 class="text-2xl leading-snug">
+                “This drink is incredibly refreshing, especially when served over ice. It’s light, crisp, and instantly cooling, making it perfect for a quick refresh any time of
+                day.”
+              </h1>
+
+              <p class="mt-6 text-gray-600">Jacob K.</p>
+            </div>
+
+            <div class="flex items-center justify-between border border-black rounded-2xl overflow-hidden bg-[#7fc51f]">
+              <div class="flex items-center gap-3 px-1 py-4">
+                <img src="./assets/Organic-Mtn-High-Chai-R15-angle_square_KO_1.png" class="w-14 object-contain scale-110 border-r border-black" />
+
+                <h5 class="text-black text-sm leading-none uppercase">
+                  Organic<br />
+                  Matcha<br />
+                  Mint
+                </h5>
+              </div>
+
+              <button class="mr-3 w-16 py-2 rounded-full bg-white border border-black text-xl">Shop</button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="relative rounded-2xl border border-black p-3 min-h-[420px] flex flex-col justify-between bg-[#f2cb62]">
+            <div class="text-center mt-10 px-3">
+              <h1 class="text-2xl leading-snug">
+                “One sip and you can feel the difference—clean energy, rich flavor, and all the good stuff your body loves. Literally liquid GOLD.”
+              </h1>
+
+              <p class="mt-6 text-gray-600">Harrison G.</p>
+            </div>
+
+            <div class="flex items-center justify-between border border-black rounded-2xl overflow-hidden bg-[#ffbc00]">
+              <div class="flex items-center gap-3 px-1 py-4">
+                <img src="./assets/Organic-Mtn-High-Chai-R15-angle_square_KO_1_1.png" class="w-14 object-contain scale-110 border-r border-black" />
+
+                <h5 class="text-black text-sm leading-none uppercase">
+                  Two Roots<br />
+                  Golden<br />
+                  Latte Mix
+                </h5>
+              </div>
+
+              <button class="mr-3 w-16 py-2 rounded-full bg-white border border-black text-xl">Shop</button>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="relative rounded-2xl border border-black p-3 min-h-[420px] flex flex-col justify-between bg-[#a7db6d]">
+            <div class="text-center mt-20 px-3">
+              <h1 class="text-3xl leading-tight">“Soo tasty and energizing.”</h1>
+
+              <p class="mt-6 text-gray-600">Gracie M.</p>
+            </div>
+
+            <div class="flex items-center justify-between border border-black rounded-2xl overflow-hidden bg-[#9ad24f]">
+              <div class="flex items-center gap-3 px-1 py-4">
+                <img src="./assets/Organic-Mtn-High-Chai-R15-angle_square_KO_1_3.png" class="w-14 object-contain scale-110 border-r border-black" />
+
+                <h5 class="text-black text-sm leading-none uppercase">
+                  Organic<br />
+                  Tropical<br />
+                  Green Tea
+                </h5>
+              </div>
+
+              <button class="mr-3 w-16 py-2 rounded-full bg-white border border-black text-xl">Shop</button>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="relative rounded-2xl border border-black p-3 min-h-[420px] flex flex-col justify-between bg-[#cbb6d5]">
+            <div class="text-center mt-16 px-3">
+              <h1 class="text-3xl leading-tight">“The perfect start to my day.”</h1>
+
+              <p class="mt-6 text-gray-600">Jorge F.</p>
+            </div>
+
+            <div class="flex items-center justify-between border border-black rounded-2xl overflow-hidden bg-[#b985d1]">
+              <div class="flex items-center gap-3 px-1 py-4">
+                <img src="./assets/Organic-Mtn-High-Chai-R15-angle_square_KO_1_4.png" class="w-14 object-contain scale-110 border-r border-black" />
+
+                <h5 class="text-black text-sm leading-none uppercase">
+                  Jasmine<br />
+                  Petal
+                </h5>
+              </div>
+
+              <button class="mr-3 w-16 py-2 rounded-full bg-white border border-black text-xl">Shop</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="grid grid-cols-2">
+          <div class="h-[90vh] bg-[url('./assets/Our_Cafe_Wholesale_Partners.webp')]"></div>
+          <div class="bg-[#2a2857] flex flex-col gap-5 justify-center pl-20">
+            <h1 class="text-white text-8xl tracking-tighter">
+              Our Cafe &<br />
+              Wholesale Partners
+            </h1>
+            <p class="text-white text-lg w-[40ch] font-medium">
+              From local cafés to national chains, our teas<br />
+              power thousands of baristas every day.
+            </p>
+            <button class="px-14 py-3 bg-white text-lg rounded-full w-fit">Learn More</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="journal" class="py-28">
+        <div class="w-1/2 mx-auto">
+          <h2 class="text-6xl bg-[#ffb500] rotate-[-3deg]">Journal</h2>
+          <h1 class="text-7xl tracking-tighter mx-auto w-fit pb-16">A community steeped in curiosity. Explore recipes, culture, and everyday tea wisdom.</h1>
+        </div>
+
+        <div class="grid grid-cols-5 gap-5 py-16 px-10">
+          <!--Product 1-->
+          <div class="cursor-pointer border border-black rounded-lg overflow-hidden bg-[#c0dbff]">
+            <div class="relative w-full aspect-square p-3 bg-[#2a2857] bg-[url('./assets/enjoy.svg')] bg-contain bg-no-repeat bg-center">
+              <h2 class="text-2xl bg-white">Recipe</h2>
+            </div>
+            <div class="pb-8 pt-4 px-4">
+              <h5>LONDON FOG EARL GREY LATTE</h5>
+            </div>
+          </div>
+
+          <!--Product 2-->
+          <div class="cursor-pointer border border-black rounded-lg overflow-hidden bg-[#c0dbff]">
+            <div
+              class="relative w-full aspect-square p-3 bg-[#2a2857] bg-[url('./assets/Two_Leaves_May_25_Shoot-36_16x9_6008ffcb-7380-43d9-b1f6-b1f5.jpg')] bg-cover bg-no-repeat bg-center">
+              <h2 class="text-2xl bg-white">Caffeine</h2>
+            </div>
+            <div class="pb-8 pt-4 px-4">
+              <h5>NICE MATCHA DRINKS TO DELIGHT!</h5>
+            </div>
+          </div>
+
+          <!--Product 3-->
+          <div class="cursor-pointer border border-black rounded-lg overflow-hidden bg-[#c0dbff]">
+            <div class="relative w-full aspect-square p-3 bg-[#2a2857] bg-[url('./assets/Two_Leaves_May_25_Shoot-24_SQ.jpg')] bg-cover bg-no-repeat bg-center">
+              <h2 class="text-2xl bg-white">Matcha</h2>
+            </div>
+            <div class="pb-8 pt-4 px-4">
+              <h5>" NICE " ICED MATCHA LATTE</h5>
+            </div>
+          </div>
+
+          <!--Product 4-->
+          <div class="cursor-pointer border border-black rounded-lg overflow-hidden bg-[#c0dbff]">
+            <div
+              class="relative w-full aspect-square p-3 bg-[#2a2857] bg-[url('./assets/chef_s_matcha_mix_9ae88222-5d88-415f-a90d-4cd0e47af7d8.svg')] bg-contain bg-no-repeat bg-center">
+              <h2 class="text-2xl bg-white">Matcha</h2>
+            </div>
+            <div class="pb-8 pt-4 px-4">
+              <h5>MATCHA ENERGY BALLS</h5>
+            </div>
+          </div>
+
+          <!--Product 5-->
+          <div class="cursor-pointer border border-black rounded-lg overflow-hidden bg-[#c0dbff]">
+            <div
+              class="relative w-full aspect-square p-3 bg-[#2a2857] bg-[url('./assets/ceremonial-matcha-tea-organic_1cf6ef8d-b56a-483f-8d58-29f766.svg')] bg-contain bg-no-repeat bg-center">
+              <h2 class="text-2xl bg-white">Tea 101</h2>
+            </div>
+            <div class="pb-8 pt-4 px-4">
+              <h5>5 REASONS TO CHOOSE ORGANIC TEAS</h5>
+            </div>
+          </div>
+        </div>
+
+        <button class="block px-14 py-3 bg-[#2a2857] text-white text-lg rounded-full w-fit mx-auto">Explore The Tea Journal</button>
+      </section>
+
+      <section id="about-us">
+        <div class="bg-[url('./assets/Two_Leaves_Tea_Aug_25_Shoot.webp')] bg-cover p-10">
+          <div class="flex flex-col justify-between bg-[#f26412] w-1/4 p-10 h-[70vh] rounded-2xl border border-black">
+            <h1 class="text-white text-6xl tracking-tighter">Great Tea. In Good Company.</h1>
+            <div>
+              <p class="text-white text-lg font-medium">Discover the people, places, and purpose behind every blend.</p>
+              <div class="h-10"></div>
+              <button class="px-14 py-3 bg-[#2a2857] text-white text-lg rounded-full w-fit">About Us</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#c0dbff]">
+      <div id="newsletter" class="w-1/2 mx-auto py-20">
+        <!-- Heading -->
+        <h2 class="text-5xl tracking-tight mb-5 border-none">STEEP WITH US</h2>
+
+        <!-- Paragraph -->
+        <h1 class="text-4xl leading-tight max-w-3xl text-[#3e3b39] mb-10">Get news stories, brewing tips, and special offers straight to your inbox.</h1>
+
+        <!-- Bottom Row -->
+        <div class="flex items-center justify-between flex-wrap gap-8">
+          <!-- Form -->
+          <div class="flex items-center gap-3 flex-wrap">
+            <input
+              type="email"
+              placeholder="name@email.com"
+              class="w-[390px] h-16 rounded-2xl border border-black bg-[#f4f4f4] px-5 text-xl outline-none placeholder:text-[#b7b2ad]" />
+
+            <button class="px-14 h-16 rounded-full bg-[#2f2a69] text-white text-2xl">Submit</button>
+          </div>
+
+          <!-- Socials -->
+          <div class="flex items-center gap-5">
+            <!-- Facebook -->
+            <div class="w-14 h-14 rounded-full border border-black flex items-center justify-center">
+              <i class="ri-facebook-circle-fill text-4xl"></i>
+            </div>
+
+            <!-- Instagram -->
+            <div class="w-14 h-14 rounded-full border border-black flex items-center justify-center">
+              <i class="ri-instagram-fill text-4xl"></i>
+            </div>
+
+            <!-- Linkedin -->
+            <div class="w-14 h-14 rounded-full border border-black flex items-center justify-center">
+              <i class="ri-linkedin-box-fill text-4xl"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#2f2a69] rounded-xl px-10 py-12 mx-auto w-[95%]">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-7 gap-10 text-[#9d9aae]">
+          <!-- Column -->
+          <div>
+            <h1 class="text-white text-2xl mb-5">Tea Varieties</h1>
+
+            <div class="space-y-1 text-lg leading-tight">
+              <p>Whole Leaf Tea Sachets</p>
+              <p>Pure Matcha</p>
+              <p>Tea Lattes</p>
+              <p>Iced Tea</p>
+            </div>
+          </div>
+
+          <!-- Column -->
+          <div>
+            <h1 class="text-white text-2xl mb-5">Collections</h1>
+
+            <div class="space-y-1 text-lg leading-tight">
+              <p>Matcha</p>
+              <p>Chai</p>
+              <p>Organic Tea</p>
+              <p>Naked Tea Sachets</p>
+              <p>Black Tea</p>
+              <p>Green Tea</p>
+              <p>Herbal Tea</p>
+              <p>Caffeine-Free</p>
+              <p>Gift & Samplers</p>
+            </div>
+          </div>
+
+          <!-- Column -->
+          <div>
+            <h1 class="text-white text-2xl mb-5">Lattes</h1>
+
+            <div class="space-y-1 text-lg leading-tight">
+              <p>Nice Matcha</p>
+              <p>Barista Matcha</p>
+              <p>Nice Chai</p>
+              <p>Barista Chai</p>
+              <p>Two Roots Golden Latte</p>
+            </div>
+          </div>
+
+          <!-- Column -->
+          <div>
+            <h1 class="text-white text-2xl mb-5">Learn</h1>
+
+            <div class="space-y-1 text-lg leading-tight">
+              <p>Our Story</p>
+              <p>Our Spirit</p>
+              <p>FAQ</p>
+              <p>Reviews</p>
+            </div>
+          </div>
+
+          <!-- Column -->
+          <div>
+            <h1 class="text-white text-2xl mb-5">Tea Journal</h1>
+
+            <div class="space-y-1 text-lg leading-tight">
+              <p>All Articles</p>
+              <p>Tea 101</p>
+              <p>Recipes</p>
+              <p>Sustainability</p>
+            </div>
+          </div>
+
+          <!-- Column -->
+          <div>
+            <h1 class="text-white text-2xl mb-5">Support</h1>
+
+            <div class="space-y-1 text-lg leading-tight">
+              <p>Contact</p>
+              <p>My Account</p>
+              <p>Loyal-Tea</p>
+              <p>Shipping & Returns</p>
+              <p>Privacy Policy</p>
+              <p>Terms & Conditions</p>
+            </div>
+          </div>
+
+          <!-- Column -->
+          <div>
+            <h1 class="text-white text-2xl mb-5 leading-tight">Cafe & Wholesale Partners</h1>
+
+            <div class="space-y-1 text-lg leading-tight">
+              <p>Cafe & Wholesale Partners</p>
+              <p>Wholesale Login</p>
+              <p>Product and Media Files</p>
+              <p>Displays & Starter Kits</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img src="./assets/Two-Leaves-and-a-Bud_logo_Indigo.png" alt="" class="object-contain w-72 mx-auto mt-20 -mb-20" />
+
+      <div class="bg-[url('./assets/footer-extended_1.png')] h-[40vh] bg-cover bg-center"></div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #fbf9eb;
+}
+
+body,
+h6,
+p,
+button {
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Cormorant Garamond", serif;
+}
+
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  line-height: 50px;
+  padding: 5px 10px 0 10px;
+  border: solid 1px black;
+  border-radius: 8px;
+  width: fit-content;
+}
+h3 {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+h5 {
+  font-family: "Roboto Mono", monospace;
+}
