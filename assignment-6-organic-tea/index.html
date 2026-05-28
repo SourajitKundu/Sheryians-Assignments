@@ -25,7 +25,7 @@
       <nav class="w-full border-b border-black bg-[#f4f1ec] px-5 py-4">
         <div class="flex items-center justify-between">
           <!-- Left -->
-          <div class="flex items-center gap-10">
+          <div class="hidden md:flex items-center gap-10">
             <div class="flex items-center gap-2 cursor-pointer">
               <h1 class="text-2xl">Shop</h1>
               <i class="ri-arrow-down-s-line text-xl"></i>
@@ -43,15 +43,15 @@
           </div>
 
           <!-- Logo -->
-          <img src="./assets/Two-Leaves-and-a-Bud_logo_Indigo.png" class="h-14 object-contain absolute left-1/2 -translate-x-1/2" />
+          <img src="./assets/Two-Leaves-and-a-Bud_logo_Indigo.png" class="h-14 object-contain" />
 
           <!-- Right -->
           <div class="flex items-center gap-10">
-            <h5 class="uppercase tracking-wide text-sm cursor-pointer">My Account</h5>
+            <h5 class="hidden md:block uppercase tracking-wide text-sm cursor-pointer">My Account</h5>
 
-            <h5 class="uppercase tracking-wide text-sm cursor-pointer">Cafe & Wholesale Partners</h5>
+            <h5 class="hidden md:block uppercase tracking-wide text-sm cursor-pointer">Cafe & Wholesale Partners</h5>
 
-            <h5 class="uppercase tracking-wide text-sm cursor-pointer">Tea Journal</h5>
+            <h5 class="hidden md:block uppercase tracking-wide text-sm cursor-pointer">Tea Journal</h5>
 
             <!-- Cart -->
             <div class="relative cursor-pointer">
@@ -67,20 +67,21 @@
       <section id="banner">
         <div class="w-full h-[90vh] flex flex-col justify-end bg-[url('./assets/banner.webp')] bg-cover p-10">
           <div class="flex flex-col gap-5">
-            <h1 class="text-white text-8xl tracking-tighter w-[12ch]">A cup that fits the moment.</h1>
-            <p class="text-white text-lg w-[40ch] font-medium">From compostable whole leaf tea sachets and iced tea to tea lattes and matcha, we’ve got something for everyone.</p>
+            <h1 class="text-white text-5xl lg:text-8xl tracking-tighter w-[12ch]">A cup that fits the moment.</h1>
+            <p class="text-white text-lg lg:w-[40ch] font-medium">
+              From compostable whole leaf tea sachets and iced tea to tea lattes and matcha, we’ve got something for everyone.
+            </p>
             <button class="px-14 py-3 bg-[#2a2857] text-white text-lg rounded-full w-fit">Shop Now</button>
           </div>
         </div>
       </section>
 
       <section id="best-seller" class="py-32">
-        <h1 class="text-7xl tracking-tighter mx-auto w-fit text-center pb-28">
-          A <i class="font-light">great</i> cup starts with a careful<br />
-          pluck - the top two leaves and a bud.
+        <h1 class="text-3xl lg:text-7xl w-1/2 lg:w-[30ch] tracking-tighter mx-auto w-fit text-center pb-28">
+          A <i class="font-light">great</i> cup starts with a careful pluck - the top two leaves and a bud.
         </h1>
         <h2 class="text-6xl mx-auto bg-[#daaeea] rotate-[-3deg]">Best Sellers</h2>
-        <div class="grid grid-cols-5 gap-5 py-16 px-10">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-5 py-16 px-10">
           <!--Product 1-->
           <div class="cursor-pointer">
             <div
@@ -179,21 +180,21 @@
       <hr class="border-black" />
 
       <section id="discover" class="py-28">
-        <div class="w-1/2 mx-auto">
-          <h2 class="text-6xl bg-[#ff7f31] rotate-[-3deg]">Discover</h2>
-          <h1 class="text-7xl tracking-tighter mx-auto w-fit pb-16">
+        <div class="w-[80%] lg:w-1/2 mx-auto">
+          <h2 class="text-3xl lg:text-6xl bg-[#ff7f31] rotate-[-3deg]">Discover</h2>
+          <h1 class="text-3xl lg:text-7xl tracking-tighter mx-auto w-fit pt-10 pb-16">
             Let’s find a cup that fits the moment.<br />
             What are you searching for?
           </h1>
 
-          <div class="w-fit border border-black rounded-2xl px-10 py-6 text-[#a8a39b]">
-            <h1 class="text-5xl font-thin">herbal tea...</h1>
+          <div class="w-1/2 lg:w-fit border border-black rounded-2xl px-5 lg:px-10 py-2 lg:py-6 text-[#a8a39b]">
+            <h1 class="text-xl lg:text-5xl font-thin">herbal tea...</h1>
           </div>
 
-          <div class="h-32"></div>
+          <div class="h-16 lg:h-32"></div>
 
           <div
-            class="flex flex-wrap gap-3 [&>*]:px-6 [&>*]:py-2 [&>*]:rounded-2xl [&>*]:border [&>*]:border-black [&>*]:bg-[#d8e5fb] [&>*]:text-3xl [&>*]:font-['Cormorant_Garamond']">
+            class="flex flex-wrap gap-3 [&>*]:px-6 [&>*]:py-2 [&>*]:rounded-2xl [&>*]:border [&>*]:border-black [&>*]:bg-[#d8e5fb] [&>*]:text-xl lg:[&>*]:text-3xl [&>*]:font-['Cormorant_Garamond']">
             <button>A Sweet Treat</button>
 
             <button>Evening Unwind</button>
@@ -232,17 +233,17 @@
       <section id="our-origins">
         <div class="bg-[url('./assets/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp')] bg-cover h-[200vh] flex flex-col justify-between items-center py-32">
           <h2 class="text-6xl bg-[#a2c9fc] rotate-[-3deg]">Our origins</h2>
-          <h3 class="text-white text-[150px] font-bold uppercase font-['Bebas Neue'] text-center leading-none">
+          <h3 class="text-white text-5xl lgtext-[150px] font-bold uppercase font-['Bebas Neue'] text-center leading-none">
             born in<br />
             colorado
           </h3>
-          <h1 class="text-white text-6xl tracking-tighter text-center">
+          <h1 class="text-white text-3xl md:text-6xl tracking-tighter text-center">
             Our founder, Richard, started Two Leaves and a Bud in pursuit<br />
             of a truly great cup. Two decades later, that same care and<br />
             curiosity guide everything we make.
           </h1>
-          <div class="w-[30vw] text-center">
-            <div class="grid grid-cols-3 gap-12 pb-16">
+          <div class="w-full px-8 md:px-0 md:w-[30vw] text-center">
+            <div class="grid grid-cols-3 gap:8 md:gap-12 pb-16">
               <div>
                 <img src="./assets/Quality_without_pretense.svg" alt="" class="w-3/4 mx-auto" />
                 <h5 class="text-white font-medium text-center">Quality, Without Pretense</h5>
@@ -264,7 +265,7 @@
       <section id="reviews" class="py-28">
         <div class="w-1/2 mx-auto">
           <h2 class="text-6xl bg-[#73bc25] rotate-[-3deg]">Reviews</h2>
-          <h1 class="text-7xl tracking-tighter mx-auto w-fit pb-16">
+          <h1 class="text-3xl md:text-7xl tracking-tighter mx-auto w-fit pb-16">
             Let's find a cup that fits the moment.<br />
             What are you searching for?
           </h1>
@@ -394,10 +395,10 @@
       </section>
 
       <section>
-        <div class="grid grid-cols-2">
-          <div class="h-[90vh] bg-[url('./assets/Our_Cafe_Wholesale_Partners.webp')]"></div>
-          <div class="bg-[#2a2857] flex flex-col gap-5 justify-center pl-20">
-            <h1 class="text-white text-8xl tracking-tighter">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+          <div class="h-[40vh] lg:h-[90vh] bg-[url('./assets/Our_Cafe_Wholesale_Partners.webp')] bg-right-bottom bg-cover"></div>
+          <div class="bg-[#2a2857] flex flex-col gap-5 justify-center p-10 lg:p-20">
+            <h1 class="text-white text-3xl lg:text-8xl tracking-tighter">
               Our Cafe &<br />
               Wholesale Partners
             </h1>
@@ -413,10 +414,10 @@
       <section id="journal" class="py-28">
         <div class="w-1/2 mx-auto">
           <h2 class="text-6xl bg-[#ffb500] rotate-[-3deg]">Journal</h2>
-          <h1 class="text-7xl tracking-tighter mx-auto w-fit pb-16">A community steeped in curiosity. Explore recipes, culture, and everyday tea wisdom.</h1>
+          <h1 class="text-3xl lg:text-7xl tracking-tighter mx-auto w-fit pb-16">A community steeped in curiosity. Explore recipes, culture, and everyday tea wisdom.</h1>
         </div>
 
-        <div class="grid grid-cols-5 gap-5 py-16 px-10">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-5 py-16 px-10">
           <!--Product 1-->
           <div class="cursor-pointer border border-black rounded-lg overflow-hidden bg-[#c0dbff]">
             <div class="relative w-full aspect-square p-3 bg-[#2a2857] bg-[url('./assets/enjoy.svg')] bg-contain bg-no-repeat bg-center">
@@ -475,9 +476,10 @@
       </section>
 
       <section id="about-us">
-        <div class="bg-[url('./assets/Two_Leaves_Tea_Aug_25_Shoot.webp')] bg-cover p-10">
-          <div class="flex flex-col justify-between bg-[#f26412] w-1/4 p-10 h-[70vh] rounded-2xl border border-black">
-            <h1 class="text-white text-6xl tracking-tighter">Great Tea. In Good Company.</h1>
+        <div class="bg-[url('./assets/Two_Leaves_Tea_Aug_25_Shoot.webp')] bg-cover lg:p-10">
+          <img src="./assets/Two_Leaves_Tea_Aug_25_Shoot.webp" alt="" class="md:hidden h-[35vh] object-cover bg-no-repeat bg-right" />
+          <div class="flex flex-col justify-between bg-[#f26412] lg:w-1/4 h-[35vh] lg:h-[70vh] md:rounded-2xl border border-black p-10">
+            <h1 class="text-white text-4xl md:text-6xl tracking-tighter">Great Tea. In Good Company.</h1>
             <div>
               <p class="text-white text-lg font-medium">Discover the people, places, and purpose behind every blend.</p>
               <div class="h-10"></div>
@@ -503,7 +505,7 @@
             <input
               type="email"
               placeholder="name@email.com"
-              class="w-[390px] h-16 rounded-2xl border border-black bg-[#f4f4f4] px-5 text-xl outline-none placeholder:text-[#b7b2ad]" />
+              class="md:w-[390px] h-16 rounded-2xl border border-black bg-[#f4f4f4] px-5 text-xl outline-none placeholder:text-[#b7b2ad]" />
 
             <button class="px-14 h-16 rounded-full bg-[#2f2a69] text-white text-2xl">Submit</button>
           </div>
