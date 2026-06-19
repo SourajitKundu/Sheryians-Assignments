@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #fbf9eb;
+  padding: 5% 15%;
+}
+
+body,
+h6,
+p,
+button,
+label,
+input {
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Cormorant Garamond", serif;
+}
+
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+}
+h3 {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+h4 {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+h5,
+h6 {
+  font-family: "Roboto Mono", monospace;
+}
