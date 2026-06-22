@@ -17,29 +17,27 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="icon" type="image/png" href="./assets/person.png" />
-
-    <script src="index.js"></script>
   </head>
   <body>
-    <main class="flex flex-col gap-10">
+    <main class="flex flex-col gap-10 py-10">
       <section id="stats">
         <div class="grid grid-cols-4 gap-5">
-          <div id="stat-pending" class="border rounded-2xl flex flex-col justify-center items-center p-5">
+          <div id="stat-pending" onclick="allPendingTasks()" class="border rounded-2xl flex flex-col justify-center items-center p-5 cursor-pointer">
             <h4 id="pending" class="text-3xl">0</h4>
             <h6>Pending</h6>
           </div>
 
-          <div id="stat-complete" class="border rounded-2xl flex flex-col justify-center items-center p-5">
+          <div id="stat-complete" onclick="allCompletedTasks()" class="border rounded-2xl flex flex-col justify-center items-center p-5 cursor-pointer">
             <h4 id="completed" class="text-3xl">0</h4>
             <h6>Completed</h6>
           </div>
 
-          <div id="stat-infeasible" class="border rounded-2xl flex flex-col justify-center items-center p-5">
+          <div id="stat-infeasible" onclick="allInfeasibleTasks()" class="border rounded-2xl flex flex-col justify-center items-center p-5 cursor-pointer">
             <h4 id="infeasible" class="text-3xl">0</h4>
             <h6>Infeasible</h6>
           </div>
 
-          <div id="stat-cancel" class="border rounded-2xl flex flex-col justify-center items-center p-5">
+          <div id="stat-cancel" onclick="allCancelledTasks()" class="border rounded-2xl flex flex-col justify-center items-center p-5 cursor-pointer">
             <h4 id="cancel" class="text-3xl">0</h4>
             <h6>Cancelled</h6>
           </div>
@@ -69,15 +67,15 @@
             <option value="cancelled">Cancelled</option>
           </select>
           <br />
-          <button type="submit">Create Task</button>
+          <button id="create-task" type="submit" class="border rounded-lg px-7 py-1">Create Task</button>
         </form>
       </section>
 
       <section id="all-tasks" class="border rounded-2xl p-5">
         <h3 class="text-4xl pb-4">All Tasks</h3>
-        <table class="w-full table-fixed border-collapse text-left">
+        <table class="w-full border-collapse text-left">
           <thead>
-            <tr class="divide-x [&>*]:px-5 [&>*]:py-3 border-b">
+            <tr class="divide-x [&>*]:px-5 [&>*]:py-3 border-b [&>*]:font-bold">
               <th>Task ID</th>
               <th>Task Name</th>
               <th>Task Category</th>
@@ -92,12 +90,13 @@
               <td>Learn Dom</td>
               <td>Study</td>
               <td>Pending</td>
-              <td><button>Edit</button></td>
-              <td><button>Delete</button></td>
+              <td class="text-center"><button class="border rounded-lg px-7 py-1">Edit</button></td>
+              <td class="text-center"><button class="border rounded-lg px-7 py-1">Delete</button></td>
             </tr>
           </tbody>
         </table>
       </section>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>

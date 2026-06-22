@@ -21,7 +21,9 @@ h6,
 p,
 button,
 label,
-input {
+input,
+th,
+td {
   font-family: "Figtree", sans-serif;
   font-weight: 400;
 }
