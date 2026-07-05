@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Finance Dashboard</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  </head>
+
+  <body class="bg-slate-100">
+    <div class="grid grid-cols-[250px_1fr] min-h-screen">
+      <!-- ================= Sidebar ================= -->
+
+      <aside class="bg-white border-r border-slate-200 p-6 flex flex-col">
+        <!-- Logo -->
+
+        <div class="flex items-center gap-3">
+          <div class="h-12 w-12 rounded-xl bg-blue-100 flex items-center justify-center">
+            <i class="ri-wallet-3-fill text-2xl text-blue-600"></i>
+          </div>
+
+          <div>
+            <h2 class="font-bold text-xl">FinTrack Pro</h2>
+
+            <p class="text-sm text-gray-500">Enterprise Finance</p>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+
+        <nav class="mt-12 space-y-3">
+          <a href="#" class="flex items-center gap-3 bg-blue-100 text-blue-700 rounded-xl px-4 py-3 font-medium">
+            <i class="ri-dashboard-fill text-lg"></i>
+
+            Dashboard
+          </a>
+
+          <a href="#" class="flex items-center gap-3 hover:bg-slate-100 rounded-xl px-4 py-3 text-gray-700">
+            <i class="ri-settings-3-fill"></i>
+
+            Settings
+          </a>
+        </nav>
+
+        <!-- Button -->
+
+        <button class="mt-auto bg-black text-white rounded-xl py-4 flex justify-center items-center gap-2 hover:bg-slate-800">
+          <i class="ri-add-line"></i>
+
+          Add Transaction
+        </button>
+      </aside>
+
+      <!-- ================= Right Side ================= -->
+
+      <div>
+        <!-- Navbar -->
+
+        <header class="h-20 bg-white border-b border-slate-200 flex items-center justify-end px-10">
+          <div class="flex items-center gap-5">
+            <span class="font-medium"> sdfsdsdffd </span>
+
+            <button class="border rounded-lg px-5 py-2 hover:bg-slate-100">
+              <i class="ri-logout-box-r-line mr-2"></i>
+
+              Logout
+            </button>
+          </div>
+        </header>
+
+        <!-- Main -->
+
+        <main class="p-10">
+          <!-- Heading -->
+
+          <div>
+            <h1 class="text-3xl font-bold">Financial Overview</h1>
+
+            <p class="text-gray-500 mt-2">Real-time tracking application</p>
+          </div>
+
+          <!-- Stats -->
+
+          <section class="grid grid-cols-4 gap-6 mt-10">
+            <!-- Card 1 -->
+
+            <div class="bg-white rounded-2xl border border-slate-200 p-6">
+              <div class="w-12 h-12 rounded-xl bg-blue-100 flex justify-center items-center">
+                <i class="ri-bank-fill text-blue-600 text-xl"></i>
+              </div>
+
+              <p class="mt-5 text-gray-500">Current Balance</p>
+
+              <h2 id="curr-balance" class="text-4xl font-bold mt-2">-₹3000.00</h2>
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="bg-white rounded-2xl border border-slate-200 p-6">
+              <div class="w-12 h-12 rounded-xl bg-green-100 flex justify-center items-center">
+                <i class="ri-line-chart-fill text-green-600 text-xl"></i>
+              </div>
+
+              <p class="mt-5 text-gray-500">Total Income</p>
+
+              <h2 id="total-income" class="text-4xl font-bold mt-2 text-green-600">₹0.00</h2>
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="bg-white rounded-2xl border border-slate-200 p-6">
+              <div class="w-12 h-12 rounded-xl bg-red-100 flex justify-center items-center">
+                <i class="ri-arrow-right-down-line text-red-600 text-xl"></i>
+              </div>
+
+              <p class="mt-5 text-gray-500">Total Expense</p>
+
+              <h2 id="total-expense" class="text-4xl font-bold mt-2 text-red-600">₹3000.00</h2>
+            </div>
+
+            <!-- Card 4 -->
+
+            <div class="bg-white rounded-2xl border border-slate-200 p-6">
+              <div class="w-12 h-12 rounded-xl bg-blue-100 flex justify-center items-center">
+                <i class="ri-wallet-3-fill text-blue-600 text-xl"></i>
+              </div>
+
+              <p class="mt-5 text-gray-500">Total Transactions</p>
+
+              <h2 id="total-transaction" class="text-4xl font-bold mt-2">1</h2>
+            </div>
+          </section>
+
+          <!-- Placeholder for next part -->
+
+          <!-- ================= Middle Section ================= -->
+
+          <section class="grid grid-cols-[2fr_1fr] gap-6 mt-8">
+            <!-- Cash Flow -->
+
+            <div class="bg-white rounded-2xl border border-slate-200 p-6">
+              <div class="flex justify-between items-center mb-6">
+                <div>
+                  <h2 class="text-2xl font-semibold">Cash Flow Analysis</h2>
+
+                  <p class="text-gray-500 text-sm">Income vs Expenses</p>
+                </div>
+
+                <button class="border rounded-lg px-4 py-2 text-sm hover:bg-slate-100">Last 30 Days</button>
+              </div>
+
+              <!-- Fake Chart -->
+
+              <div class="h-72 rounded-xl bg-gradient-to-b from-blue-50 to-white border flex items-end justify-evenly p-6">
+                <div class="w-10 bg-green-500 rounded-t-lg h-40"></div>
+
+                <div class="w-10 bg-red-500 rounded-t-lg h-24"></div>
+
+                <div class="w-10 bg-green-500 rounded-t-lg h-56"></div>
+
+                <div class="w-10 bg-red-500 rounded-t-lg h-32"></div>
+
+                <div class="w-10 bg-green-500 rounded-t-lg h-48"></div>
+
+                <div class="w-10 bg-red-500 rounded-t-lg h-20"></div>
+
+                <div class="w-10 bg-green-500 rounded-t-lg h-64"></div>
+              </div>
+            </div>
+
+            <!-- Preferences -->
+
+            <div class="bg-white rounded-2xl border border-slate-200 p-6">
+              <h2 class="text-2xl font-semibold">Preferences</h2>
+
+              <div class="space-y-5 mt-8">
+                <div>
+                  <label class="font-medium"> Currency </label>
+
+                  <select class="w-full border rounded-lg mt-2 p-3">
+                    <option>INR (₹)</option>
+                    <option>USD ($)</option>
+                    <option>EUR (€)</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="font-medium"> Theme </label>
+
+                  <select class="w-full border rounded-lg mt-2 p-3">
+                    <option>Light</option>
+                    <option>Dark</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="font-medium"> Language </label>
+
+                  <select class="w-full border rounded-lg mt-2 p-3">
+                    <option>English</option>
+                    <option>Hindi</option>
+                  </select>
+                </div>
+
+                <button class="w-full bg-blue-600 text-white py-3 rounded-xl mt-4 hover:bg-blue-700">Save Preferences</button>
+              </div>
+            </div>
+          </section>
+
+          <!-- ================= Transactions ================= -->
+
+          <section class="bg-white rounded-2xl border border-slate-200 p-6 mt-8">
+            <div class="flex justify-between items-center">
+              <div>
+                <h2 class="text-2xl font-semibold">All Transactions</h2>
+
+                <p class="text-gray-500 text-sm">Manage your finances</p>
+              </div>
+
+              <div class="flex gap-4">
+                <input type="text" placeholder="Search..." class="border rounded-lg px-4 py-2 w-64 outline-none focus:ring-2 focus:ring-blue-500" />
+
+                <select class="border rounded-lg px-4 py-2">
+                  <option>All</option>
+                  <option>Income</option>
+                  <option>Expense</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="overflow-x-auto mt-8">
+              <table class="w-full">
+                <thead>
+                  <tr class="border-b text-left text-gray-500">
+                    <th class="py-4">Type</th>
+                    <th>Description</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+
+                <tbody id="tran-list">
+                  <tr class="border-b">
+                    <td class="tran-list-type py-5">
+                      <span class="bg-red-100 text-red-600 px-3 py-1 rounded-full text-sm"> Loading </span>
+                    </td>
+
+                    <td class="tran-list-desc">Loading</td>
+
+                    <td class="tran-list-cat">Loading</td>
+
+                    <td class="tran-list-date">Loading</td>
+
+                    <td class="tran-list-amt text-red-600 font-semibold">Loading</td>
+
+                    <td>
+                      <div class="flex gap-3">
+                        <button class="text-blue-600 hover:text-blue-800">
+                          <i class="ri-edit-box-line"></i>
+                        </button>
+
+                        <button class="text-red-600 hover:text-red-800">
+                          <i class="ri-delete-bin-line"></i>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <!--Add Edit Modal Form-->
+    <div id="modal" class="flex justify-center items-center backdrop-blur bg-black/70">
+      <div id="add-edit-form" class="bg-white rounded-2xl p-10 w-[500px] shadow-xl flex flex-col gap-7">
+        <h1 id="add-edit-heading" class="font-semibold text-xl">Add Transaction</h1>
+        <form class="flex flex-col gap-4">
+          <label for="tran-type" class="font-medium">Type</label>
+          <select name="tran-type" id="tran-type" class="px-2 py-2 border border-slate-300 rounded-lg bg-slate-50">
+            <option value="expense">Expense</option>
+            <option value="income">Income</option>
+          </select>
+
+          <label for="tran-desc" class="font-medium">Description</label>
+          <input type="text" id="tran-desc" placeholder="e.g. Amazon, Salary, Coffee" class="px-2 py-2 border border-slate-300 rounded-lg bg-slate-50" />
+
+          <div class="grid grid-cols-2 gap-6">
+            <div class="flex flex-col">
+              <label for="tran-amt" class="font-medium">Amount</label>
+              <input type="number" id="tran-amt" class="mt-2 px-2 py-2 border border-slate-300 rounded-lg bg-slate-50" />
+            </div>
+            <div class="flex flex-col">
+              <label for="tran-date" class="font-medium">Date</label>
+              <input type="date" id="tran-date" class="mt-2 px-2 py-2 border border-slate-300 rounded-lg bg-slate-50" />
+            </div>
+          </div>
+
+          <label for="tran-cat" class="font-medium">Category</label>
+          <select name="tran-cat" id="tran-cat" class="px-2 py-2 border border-slate-300 rounded-lg bg-slate-50"></select>
+
+          <button type="submit" id="add-edit-btn" class="w-full bg-black text-white py-3 rounded-xl">Add Transaction</button>
+        </form>
+      </div>
+    </div>
+    <!--Add Edit Modal Form Ends-->
+    <script src="index.js"></script>
+  </body>
+</html>
