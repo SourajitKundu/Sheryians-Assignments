@@ -1,5 +1,69 @@
 const addEditForm = document.querySelector("form");
 
+const totalExpense = document.querySelector("#total-expense");
+const totalIncome = document.querySelector("#total-income");
+const currentBalance = document.querySelector("#curr-balance");
+
+//Initilising App function but call it at bottom of all
+let list = [];
+
+function initializeApp() {
+  loadFromLocalStorage();
+
+  if (list.length === 0) {
+    list = [
+      {
+        id: 1,
+        type: "expense",
+        description: "Grocery Shopping",
+        amount: 1850,
+        date: "2026-07-02",
+        category: "Food & Dining",
+      },
+      {
+        id: 2,
+        type: "income",
+        description: "Monthly Salary",
+        amount: 45000,
+        date: "2026-07-01",
+        category: "Salary",
+      },
+      {
+        id: 3,
+        type: "expense",
+        description: "Petrol",
+        amount: 1200,
+        date: "2026-07-04",
+        category: "Petrol & Auto",
+      },
+    ];
+    saveToLocalStorage();
+  }
+
+  renderFullList(list);
+}
+
+//Symbol Preference
+const currSymbol = document.querySelector("#money-symbol");
+
+let moneySymbol = "₹";
+
+currSymbol.addEventListener("change", function () {
+  moneySymbol = currSymbol.value;
+  renderFullList(list);
+});
+
+//Mode Preference
+const themePrefer = document.querySelector("#theme-select");
+
+themePrefer.addEventListener("change", function () {
+  document.documentElement.classList.remove("dark");
+
+  if (themePrefer.value === "dark") {
+    document.documentElement.classList.add("dark");
+  }
+});
+
 //rendering dynamic category based on user selected Income or Expense
 
 const categories = {
@@ -31,41 +95,35 @@ const totalTransaction = document.querySelector("#total-transaction");
 
 const renderTransactionList = document.querySelector("#tran-list");
 
-let list = [
-  {
-    id: 1,
-    type: "expense",
-    description: "Grocery Shopping",
-    amount: 1850,
-    date: "2026-07-02",
-    category: "Food & Dining",
-  },
-  {
-    id: 2,
-    type: "income",
-    description: "Monthly Salary",
-    amount: 45000,
-    date: "2026-07-01",
-    category: "Salary",
-  },
-  {
-    id: 3,
-    type: "expense",
-    description: "Petrol",
-    amount: 1200,
-    date: "2026-07-04",
-    category: "Petrol & Auto",
-  },
-];
-
 function renderFullList(transactionList) {
   renderTransactionList.innerHTML = "";
+  let expense = 0;
+  let income = 0;
+  let balance = 0;
 
   transactionList.forEach((transaction) => {
+    let typeClass = "";
+    let sign = "";
+    let amountClass = "";
+
+    if (transaction.type === "income") {
+      typeClass = "bg-green-100 text-green-600";
+      sign = "+";
+      amountClass = "text-green-600";
+
+      income += transaction.amount;
+    } else {
+      typeClass = "bg-red-100 text-red-600";
+      sign = "-";
+      amountClass = "text-red-600";
+
+      expense += transaction.amount;
+    }
+
     renderTransactionList.innerHTML += `
         <tr class="border-b divide-y">
             <td class="tran-list-type py-5">
-                <span class="bg-red-100 text-red-600 px-3 py-1 rounded-full text-sm"> ${transaction.type} </span>
+                <span class="${typeClass} px-3 py-1 rounded-full text-sm"> ${transaction.type} </span>
             </td>
 
             <td class="tran-list-desc">${transaction.description}</td>
@@ -74,7 +132,7 @@ function renderFullList(transactionList) {
 
             <td class="tran-list-date">${transaction.date}</td>
 
-            <td class="tran-list-amt text-red-600 font-semibold">${transaction.amount}</td>
+            <td class="tran-list-amt ${amountClass} font-semibold">${sign}${moneySymbol}${transaction.amount}</td>
 
             <td>
                 <div class="flex gap-3">
@@ -90,11 +148,17 @@ function renderFullList(transactionList) {
         </tr>
     `;
   });
-
+  //stats
+  totalExpense.innerHTML = `${moneySymbol}${expense}`;
+  totalIncome.innerHTML = `${moneySymbol}${income}`;
   totalTransaction.innerText = transactionList.length;
+  balance = income - expense;
+  if (balance < 0) {
+    currentBalance.innerHTML = `-${moneySymbol}${Math.abs(balance)}`;
+  } else {
+    currentBalance.innerHTML = `${moneySymbol}${Math.abs(balance)}`;
+  }
 }
-
-renderFullList(list);
 
 //adding transaction from form to transaction list
 let editId = null;
@@ -130,14 +194,18 @@ addEditForm.addEventListener("submit", (e) => {
     updateTran.date = transactionDate.value;
     updateTran.category = transactionCategory.value;
 
-    editId === null;
+    editId = null;
   }
+
+  saveToLocalStorage();
 
   renderFullList(list);
 
   addEditForm.reset();
 
   loadCategories(categories[transactionType.value]);
+
+  closeAddEditForm();
 });
 
 //writing Edit Func
@@ -145,6 +213,8 @@ function editFunc(id) {
   editId = Number(id);
 
   const editTransaction = list.find((elem) => elem.id === id);
+
+  openAddEditForm();
 
   transactionType.value = editTransaction.type;
   loadCategories(categories[transactionType.value]);
@@ -163,6 +233,44 @@ function deleteFunc(id) {
   if (index !== -1) {
     list.splice(index, 1);
   }
+  saveToLocalStorage();
 
   renderFullList(list);
 }
+
+//Viewing add edit form
+
+const addTransactionBtn = document.querySelector("#add-transaction-btn");
+const addEditModal = document.querySelector("#modal");
+const closeFormBtn = addEditModal.querySelector("#close-modal");
+
+function openAddEditForm() {
+  addEditModal.classList.remove("hidden");
+}
+function closeAddEditForm() {
+  addEditModal.classList.add("hidden");
+}
+
+addTransactionBtn.addEventListener("click", function (e) {
+  openAddEditForm();
+});
+closeFormBtn.addEventListener("click", function (e) {
+  closeAddEditForm();
+});
+
+// local storage saving and loading functions
+
+function saveToLocalStorage() {
+  localStorage.setItem("transactions", JSON.stringify(list));
+}
+function loadFromLocalStorage() {
+  const data = localStorage.getItem("transactions");
+
+  if (!data) return;
+
+  list = JSON.parse(data);
+}
+
+//Starting the App
+
+initializeApp();
